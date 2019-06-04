@@ -1,0 +1,29 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.CoinContainer {
+
+    -webkit-box-shadow: 10px 17px 111px -1px rgba(0,0,0,1);
+-moz-box-shadow: 10px 17px 111px -1px rgba(0,0,0,1);
+box-shadow: 10px 17px 111px -1px rgba(0,0,0,1); 
+    text-align: center;
+    padding: 20px;
+    
+    margin:100px auto;
+    width: 30%;
+}
+ img {
+    
+    width: 200px;
+    height: 200px;
+}
+p {
+    font-size: 20px;
+}
+button, button:hover {
+    margin-top: 10px;
+    cursor: pointer;
+}
+    

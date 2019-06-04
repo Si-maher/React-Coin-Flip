@@ -44,8 +44,10 @@ class CoinContainer extends Component {
         return (
             <div className="CoinContainer">
                 <h2>Let's Flip A Coin!!!</h2>
-                <button onClick={this.handleClick}>Flip Me!!</button>
+
+                {/*  Boolean shortcut. If the left side is true, then render the right */}
                 {this.state.currentCoin && <Coin info={this.state.currentCoin} />}
+                <button onClick={this.handleClick}>Flip Me!!</button>
                 <p>Out of {this.state.numFlips} flips, there have been {this.state.numHeads} heads and {this.state.numTails} tails</p>
 
             </div >
