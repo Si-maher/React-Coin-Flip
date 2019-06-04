@@ -16,7 +16,7 @@ class CoinContainer extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            //    * when the page loads, no coin is displayed, totals are set to 0.
+            //    * when the page loads, no coin is displayed(null), totals are set to 0.
 
             currentCoin: null,
             numFlips: 0,
