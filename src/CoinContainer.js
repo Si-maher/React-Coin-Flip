@@ -1,4 +1,7 @@
 import React, { Component } from "react"
+import Coin from "./Coin"
+import Head from "./Images/Head.jpeg"
+import Tails from "./Images/Tails.jpeg"
 import { choice } from "./Helpers"
 
 class CoinContainer extends Component {
@@ -6,8 +9,8 @@ class CoinContainer extends Component {
         // *Coins is an Array that contains these objects
         coins: [
 
-            { side: "heads", imgSrc: "https://tinyurl.com/react-coin-heads-jpg" },
-            { side: "tails", imgSrc: "https://tinyurl.com/react-coin-tails-jpg" }
+            { side: "heads", imgSrc: Head },
+            { side: "tails", imgSrc: Tails }
         ]
     }
     constructor(props) {
@@ -42,9 +45,10 @@ class CoinContainer extends Component {
             <div className="CoinContainer">
                 <h2>Let's Flip A Coin!!!</h2>
                 <button onClick={this.handleClick}>Flip Me!!</button>
+                {this.state.currentCoin && <Coin info={this.state.currentCoin} />}
                 <p>Out of {this.state.numFlips} flips, there have been {this.state.numHeads} heads and {this.state.numTails} tails</p>
 
-            </div>
+            </div >
         )
     }
 }
