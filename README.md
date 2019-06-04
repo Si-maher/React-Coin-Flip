@@ -5,7 +5,7 @@ This React App allows the user to flip a coin, with the number of heads and tail
 #[Demo]
 
 #Technologies
-*HTML
-*CSS
-*JavaScript
-*React
+* HTML
+* CSS
+* JavaScript
+* React
