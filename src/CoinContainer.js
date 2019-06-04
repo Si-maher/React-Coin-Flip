@@ -23,6 +23,15 @@ class CoinContainer extends Component {
         this.handleClick = this.handleClick.bind(this)
     }
     flipCoin() {
+        const newCoin = choice(this.props.coins)
+        this.setState(st => {
+            return {
+                currentCoin: newCoin,
+                numFlips: st.numFlips + 1,
+                numHeads: st.numHeads + (newCoin.side === "heads" ? 1 : 0),
+                numTails: st.numTails + (newCoin.side === "tails" ? 1 : 0)
+            }
+        })
 
     }
     handleClick(e) {
